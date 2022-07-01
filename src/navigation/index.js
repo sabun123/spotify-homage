@@ -1,7 +1,8 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import App from '../App';
-import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
+import Home from 'pages/Home';
+import Discover from 'pages/Discover';
+import NotFound from 'pages/NotFound';
 
 const Navigation = () => {
   return (
@@ -9,7 +10,7 @@ const Navigation = () => {
       <Routes>
         <Route path='/' element={<Navigate to={'/discover'} replace />} />
         <Route path='/' element={<Home />}>
-          <Route path='discover' element={<App />} />
+          <Route path='discover' element={<Discover />} />
           <Route path='search' element={<App />} />
           <Route path='favourites' element={<App />} />
           <Route path='playlists' element={<App />} />
