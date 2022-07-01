@@ -1,0 +1,76 @@
+.Side-Bar__container {
+	display: flex;
+	flex-direction: column;
+	min-width: 241px;
+	max-width: 241px;
+	background-color: #191414;
+}
+
+.Side-Bar__profile_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	min-height: 150px;
+	font-family: inherit;
+}
+
+.Side-Bar__profile_container img {
+	max-width: 50px;
+}
+
+.Side-Bar__buttons_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.Side-Bar__buttons_container button {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 40px;
+	padding-left: 50px;
+	background-color: transparent;
+	border: none;
+	color: #ffffff;
+	font-family: inherit;
+}
+
+.Side-Bar__buttons_container button:hover {
+	background-image: linear-gradient(to right, #ffffff40, #ffffff00);
+}
+
+.Side-Bar__buttons_container button p {
+	margin-left: 20px;
+}
+
+/* for mobile devices, if 600px wide or less, do this */
+@media screen and (max-width: 600px){
+	.Side-Bar__container {
+		min-width: 80px;
+		max-width: 80px;
+	}
+
+	.Side-Bar__profile_container {
+		min-height: 100px;
+	}
+
+	.Side-Bar__profile_container p {
+		display: none;
+	}
+
+	.Side-Bar__profile_container img {
+		max-width: 30px;
+	}
+
+	.Side-Bar__buttons_container button {
+		justify-content: center;
+		align-items: center;
+		padding-left: 0px;
+	}
+
+	.Side-Bar__buttons_container button p {
+		display: none;
+	}
+}
