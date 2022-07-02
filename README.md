@@ -5,11 +5,13 @@ Uses the latest ReactJS, version 18.
 
 This is a non-ejected CRA project, developed by Yusuf Ismail.
 
+![Alt text](src/assets/screenshot1.png?raw=true 'Discover landing page')
+
 ## Prerequisites
 
 Make sure you have the following setup on your system:
 
-- NodeJS (preferably v16 above)
+- NodeJS (preferably v16, v18 was used for this)
 - NPM (should be auto-installed along with NodeJS)
 - Run the commands using a Bash terminal (avoid PowerShell/CMD)
 
@@ -25,8 +27,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 1. You will be presented with an Authorization screen first.
    You may use the pre-filled Client ID and Client Secret or supply your own.
 
+   ![Authorization page](src/assets/screenshot2.png?raw=true 'Authorization page')
+
 2. After pressing Authorize, you will be sent to Spotify's OAuth login.
+   ![OAuth login](src/assets/screenshot3.png?raw=true 'OAuth')
+   ![Spotify 2nd page](src/assets/screenshot4.png?raw=true 'Spotify 2nd page')
 3. Once you agree, if authorization is successful you'll be brought to the Discover page where Featured Playlists and Released This week will be automatically loaded.
+   ![mobile view](src/assets/screenshot5.png?raw=true 'mobile view')
 
 If you have not received the OAuth token, you will always be redirected to the /authorize page until you successfully obtain one.
 
@@ -34,6 +41,7 @@ NOTE:
 
 - No input validation has been setup on this screen. Bad input is not handled.
 - No unhappy path for Spotify OAuth, so if you fail to login or disagree to allowing the app to connect this remains unhandled.
+- Due to time constraints, only tested on Firefox and Chrome.
 - All buttons on the side bar work, but other than Discover they simply lead to a static placeholder page.
 
 EXTRA:
