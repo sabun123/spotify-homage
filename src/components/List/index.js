@@ -5,6 +5,8 @@ import styles from './List.module.css';
 
 const List = ({ listData }) => {
   const scrollRef = useRef();
+  const width = window.innerWidth;
+  const scrollSize = width <= 600 ? 220 : 120;
 
   const { title, data } = listData;
   return (
@@ -15,7 +17,7 @@ const List = ({ listData }) => {
         <button
           name='left'
           onClick={() => {
-            scrollRef.current.scrollLeft -= 120;
+            scrollRef.current.scrollLeft -= scrollSize;
           }}
         >
           <FaChevronLeft color='#ffffff' />
@@ -23,7 +25,7 @@ const List = ({ listData }) => {
         <button
           name='right'
           onMouseDown={() => {
-            scrollRef.current.scrollLeft += 120;
+            scrollRef.current.scrollLeft += scrollSize;
           }}
         >
           <FaChevronRight color='#ffffff' />

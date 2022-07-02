@@ -27,3 +27,11 @@
 	margin: 0;
 	font-family: inherit;
 }
+
+@media screen and (max-width: 600px){
+	.Card__container {
+		min-width: 200px;
+		max-width: 200px;
+		max-height: 2000px;
+	}
+}
