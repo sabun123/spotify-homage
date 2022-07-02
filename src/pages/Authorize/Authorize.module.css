@@ -1,0 +1,12 @@
+.Authorize__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.Authorize__container p {
+	max-width: 50%;
+	text-align: center;
+}
