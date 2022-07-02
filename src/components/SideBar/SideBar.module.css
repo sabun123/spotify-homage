@@ -39,6 +39,7 @@
 
 .Side-Bar__buttons_container button:hover {
 	background-image: linear-gradient(to right, #ffffff40, #ffffff00);
+	cursor: pointer;
 }
 
 .Side-Bar__buttons_container button p {
