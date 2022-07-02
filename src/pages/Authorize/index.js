@@ -46,7 +46,7 @@ const Authorize = (props) => {
       <p>
         Notes: <br />
         You may use the default Client ID and Client Secret that is already
-        pre-filled.
+        pre-filled. Just click Authorize.
       </p>
       <p>
         You will then be redirected to Spotify's OAuth login before you can
@@ -55,8 +55,9 @@ const Authorize = (props) => {
         will need to login first.
       </p>
       <p>
-        **Data is persisted after first authorization. Use a private window or
-        hard clear cache. Logout/Unauthorized mechanism has not been setup**
+        **Data is persisted after first authorization. Use a new private window
+        if token is no longer working. Logout/Unauthorize/Clear local mechanism
+        has not been setup**
       </p>
     </div>
   );
