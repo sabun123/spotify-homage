@@ -33,6 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
    ![OAuth login](src/assets/screenshot3.png?raw=true 'OAuth')
    ![Spotify 2nd page](src/assets/screenshot4.png?raw=true 'Spotify 2nd page')
 3. Once you agree, if authorization is successful you'll be brought to the Discover page where Featured Playlists and Released This week will be automatically loaded.
+
    ![mobile view](src/assets/screenshot5.png?raw=true 'mobile view')
 
 If you have not received the OAuth token, you will always be redirected to the /authorize page until you successfully obtain one.
