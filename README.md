@@ -22,8 +22,23 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. You will be presented with an Authorization screen first.
+   You may use the pre-filled Client ID and Client Secret or supply your own.
+
+2. After pressing Authorize, you will be sent to Spotify's OAuth login.
+3. Once you agree, if authorization is successful you'll be brought to the Discover page where Featured Playlists and Released This week will be automatically loaded.
+
+If you have not received the OAuth token, you will always be redirected to the /authorize page until you successfully obtain one.
+
+NOTE:
+
+- No input validation has been setup on this screen. Bad input is not handled.
+- No unhappy path for Spotify OAuth, so if you fail to login or disagree to allowing the app to connect this remains unhandled.
+- All buttons on the side bar work, but other than Discover they simply lead to a static placeholder page.
+
+EXTRA:
+
+- The app attempts to handle all other routes that are undefined. You will be brought to a page in the color of Homage saying the page does not exist.
 
 ## Testing Spotify-Homage
 
