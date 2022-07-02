@@ -1,0 +1,29 @@
+.Card__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 120px;
+	max-width: 120px;
+	max-height: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Card__container img {
+	width: 100%;
+	height: 70%;
+	margin-bottom: 5px;
+	margin-top: 0;
+	padding-top: 0;
+	border-radius: 5px;
+	background-color: grey;
+	object-fit: cover;
+}
+
+.Card__container p {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	text-align: center;
+	margin: 0;
+	font-family: inherit;
+}
